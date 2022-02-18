@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import 'normalize.css';
+import './styles/styles.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
