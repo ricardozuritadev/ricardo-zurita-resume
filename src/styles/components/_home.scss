@@ -1,0 +1,170 @@
+// HOME SECTION
+.header {
+  display: none;
+}
+
+.name {
+  animation: opacityUp 2s;
+
+  &__texts {
+    padding: 2rem 3rem 0;
+  }
+
+  &__hi {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 0.3rem;
+  }
+
+  &__first {
+    color: $color-primary;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;
+    animation: moveInRight 0.8s;
+
+    &--lightMode {
+      color: $color-black;
+    }
+  }
+
+  &__second {
+    color: var(--white);
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__developer {
+    color: var(--second);
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding-left: 0.2rem;
+  }
+
+  &__artist {
+    color: var(--second);
+  }
+}
+
+.character {
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.scroll {
+  display: none;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .name {
+    &_texts {
+      padding: 4rem 5rem 0;
+    }
+
+    &__hi {
+      font-size: 2.8rem;
+    }
+
+    &__first {
+      font-size: 9rem;
+    }
+
+    &__second {
+      font-size: 8.5rem;
+    }
+
+    &__developer {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Breakpoint 768px
+@media only screen and (min-width: 768px) {
+  .name {
+    display: block;
+
+    &__hi {
+      font-size: 2.2rem;
+      padding-left: 0.5rem;
+    }
+
+    &__first {
+      font-size: 10rem;
+    }
+
+    &__second {
+      font-size: 8.5rem;
+    }
+
+    &__developer {
+      padding-left: 0.3rem;
+    }
+  }
+
+  .character__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .header {
+    display: block;
+  }
+
+  .name {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    padding-left: 18rem;
+
+    &__texts {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 5rem;
+    }
+  }
+
+  .character {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: 6rem 6rem 0 -18rem;
+
+    &__img {
+      object-fit: cover;
+      width: 90%;
+    }
+  }
+
+  .scroll {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-left: 3.5rem;
+    animation: float 2s ease-in-out infinite;
+
+    &__icon {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      width: 10%;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
