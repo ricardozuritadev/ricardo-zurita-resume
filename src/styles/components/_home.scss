@@ -152,14 +152,14 @@
   .scroll {
     display: flex;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 10rem;
     margin-left: 3.5rem;
     animation: float 2s ease-in-out infinite;
 
-    &__icon {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      width: 10%;
+    &__icons {
+      display: flex;
+      flex-direction: column;
     }
 
     &__text {

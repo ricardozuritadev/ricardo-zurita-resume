@@ -1,5 +1,5 @@
 const Studies = () => {
-  return <div>Studies</div>;
+  return <section className="studies">Estudios</section>;
 };
 
 export default Studies;

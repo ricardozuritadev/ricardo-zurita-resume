@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { themeContext } from '../utils/themeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,48 +12,66 @@ const NavBar = () => {
       <div className="logo">
         <img src="" alt="" className="logo__img" />
       </div>
+
       <nav className="nav">
-        <ul className="nav__list">
-          <li
-            className={`nav__links ${
-              theme.lightMode && 'nav__links--lightMode'
-            }`}
-          >
-            Sobre mí
-          </li>
-          <li
-            className={`nav__links ${
-              theme.lightMode && 'nav__links--lightMode'
-            }`}
-          >
-            Habilidades
-          </li>
-          <li
-            className={`nav__links ${
-              theme.lightMode && 'nav__links--lightMode'
-            }`}
-          >
-            Estudios
-          </li>
-          <li
-            className={`nav__links ${
-              theme.lightMode && 'nav__links--lightMode'
-            }`}
-          >
-            Proyectos
-          </li>
-          <li
-            className={`nav__links ${
-              theme.lightMode && 'nav__links--lightMode'
-            }`}
-          >
-            Contacto
-          </li>
-        </ul>
+        <NavLink
+          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
+          to="/about"
+        >
+          Sobre mí
+        </NavLink>
+
+        <NavLink
+          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
+          to="/skills"
+        >
+          Habilidades
+        </NavLink>
+
+        <NavLink
+          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
+          to="/studies"
+        >
+          Estudios
+        </NavLink>
+
+        <NavLink
+          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
+          to="/work"
+        >
+          Proyectos
+        </NavLink>
+
+        <NavLink
+          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
+          to="/contact"
+        >
+          Contacto
+        </NavLink>
       </nav>
+
       <div className="nav__social">
-        <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-        <FontAwesomeIcon icon={faGithub} size="lg" />
+        <a
+          className={`nav_socialLinks ${
+            theme.lightMode && 'nav__socialLinks--lightMode'
+          }`}
+          href="https://www.linkedin.com/in/ricardozuritab/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+        </a>
+
+        <a
+          className={`nav_socialLinks ${
+            theme.lightMode && 'nav__socialLinks--lightMode'
+          }`}
+          href="https://github.com/ricardozurita"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} size="lg" />
+        </a>
       </div>
     </header>
   );

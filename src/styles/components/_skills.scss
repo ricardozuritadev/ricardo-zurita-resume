@@ -1,0 +1,17 @@
+.skills {
+  padding: 2rem 3rem 0;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .skills {
+    padding: 4rem 5rem 0;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .skills {
+    padding-left: 18rem;
+  }
+}

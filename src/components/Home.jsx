@@ -1,5 +1,8 @@
 import { useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { themeContext } from '../utils/themeContext';
+import { faComputerMouse } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   const theme = useContext(themeContext);
@@ -29,11 +32,10 @@ const Home = () => {
         />
       </div>
       <div className="scroll">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/icons%2Fscroll.svg?alt=media&token=e0543fd8-dae7-4e37-aa6d-304f7501eb0a"
-          alt="icono scroll"
-          className="scroll__icon"
-        />
+        <div className="scroll__icons">
+          <FontAwesomeIcon icon={faComputerMouse} size="2x" />
+          <FontAwesomeIcon icon={faAngleDown} size="lg" />
+        </div>
         <p className="scroll__text">Scroll</p>
       </div>
     </section>

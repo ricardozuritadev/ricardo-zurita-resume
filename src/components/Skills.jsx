@@ -1,5 +1,5 @@
 const Skills = () => {
-  return <div>Skills</div>;
+  return <section className="skills">Habilidades</section>;
 };
 
 export default Skills;
