@@ -50,6 +50,12 @@
 
   .mern {
     color: $color-tertiary;
+    font-weight: 400;
+    transition: all 0.15s;
+
+    &--lightMode {
+      color: $color-secondary;
+    }
   }
 }
 

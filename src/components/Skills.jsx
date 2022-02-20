@@ -17,20 +17,23 @@ const Skills = () => {
       <div className="skills__grid">
         <div className="skills__text">
           <p className="texts">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            similique ipsa excepturi minus pariatur dolorum fuga perferendis,
-            sint blanditiis! Tenetur temporibus debitis error dolorum quis iste,
-            est voluptatum pariatur vitae nisi molestias, ratione eius
-            laboriosam iusto a! Maxime quia repudiandae iusto voluptate, aliquam
-            cumque in. Veritatis esse fugit reiciendis ea?
+            He desarrollado habilidades tanto en la parte
+            <strong> Front-end</strong> como en<strong> Back-end</strong>.
           </p>
           <p className="texts">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            similique ipsa excepturi minus pariatur dolorum fuga perferendis,
-            sint blanditiis! Tenetur temporibus debitis error dolorum quis iste,
-            est voluptatum pariatur vitae nisi molestias, ratione eius
-            laboriosam iusto a! Maxime quia repudiandae iusto voluptate, aliquam
-            cumque in. Veritatis esse fugit reiciendis ea?
+            Considero que mis puntos fuertes son la maquetación con
+            <strong> React</strong>,<strong> CSS</strong> y
+            <strong> Sass</strong> en la parte Front-end, y
+            <strong> Node.js</strong> con<strong> express</strong> en la parte
+            Back-end
+          </p>
+          <p className="texts">
+            Tengo conocimientos sólidos en la base de datos NoSQL
+            <strong> MongoDB</strong> con<strong> mongoose</strong>.
+          </p>
+          <p className="texts">
+            También he hecho un poco de testing con<strong> Jest</strong>, y he
+            empezado a aprender<strong> Docker</strong>.
           </p>
         </div>
         <div className="skills__bars">

@@ -27,6 +27,10 @@ const About = () => {
           También he hecho estudios en diseño 2D/3D, grabación y edición de
           vídeo.
         </p>
+        <p className="texts">
+          Me gusta tocar la guitarra en mis tiempos libres, jugar al fútbol y
+          soy fan del cine de Christopher Nolan.
+        </p>
       </div>
       <div className="about__img"></div>
     </section>
