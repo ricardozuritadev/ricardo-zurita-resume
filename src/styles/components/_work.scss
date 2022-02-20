@@ -1,10 +1,52 @@
 .work {
+  animation: fadeIn 1.5s;
+
+  &__img {
+    height: 20rem;
+    width: 100%;
+
+    &--1 {
+      background-color: red;
+    }
+
+    &--2 {
+      background-color: blue;
+    }
+
+    &--3 {
+      background-color: green;
+    }
+
+    &--4 {
+      background-color: white;
+    }
+
+    &--5 {
+      background-color: pink;
+    }
+
+    &--6 {
+      background-color: yellow;
+    }
+  }
 }
 
 // Breakpoint 576px
 @media only screen and (min-width: 576px) {
+  .work__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work__img {
+    height: 25rem;
+  }
 }
 
 // Breakpoint 992px
 @media only screen and (min-width: 992px) {
+  .work__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
