@@ -19,11 +19,39 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: $font-default;
   transition: all 0.2s ease-out;
-}
 
-body.light-mode {
-  background-color: $background-color-light;
-  color: $color-black;
+  // SCROLLBAR STYLES
+  // Works on Firefox
+  scrollbar-color: $color-gray-dark-2 $color-black;
+  /* Works on Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    background-color: $color-gray-dark-2;
+    width: 1.2rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-black;
+    border-radius: 2rem;
+  }
+
+  &.light-mode {
+    background-color: $background-color-light;
+    color: $color-black;
+
+    // SCROLLBAR STYLES
+    // Works on Firefox
+    scrollbar-color: $color-black $color-gray-light;
+    /* Works on Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      background-color: $color-gray-light;
+      width: 1.2rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-gray-light-2;
+      border-radius: 2rem;
+    }
+  }
 }
 
 a {

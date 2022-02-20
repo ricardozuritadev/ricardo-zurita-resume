@@ -39,22 +39,22 @@ const SkillsBar = () => {
 
         <p className="skillsbar__title">Node.js</p>
         <div
-          className={`bar intermediate ${theme.lightMode && 'bar--lightMode'}`}
+          className={`bar advanced ${theme.lightMode && 'bar--lightMode'}`}
         ></div>
 
         <p className="skillsbar__title">Express</p>
         <div
-          className={`bar intermediate ${theme.lightMode && 'bar--lightMode'}`}
+          className={`bar advanced ${theme.lightMode && 'bar--lightMode'}`}
         ></div>
 
-        <p className="skillsbar__title">MongoDB</p>
+        <p className="skillsbar__title">MongoDB con mongoose</p>
         <div
-          className={`bar intermediate ${
+          className={`bar advanced ${
             theme.lightMode ? 'bar--lightMode front' : 'back'
           }`}
         ></div>
 
-        <p className="skillsbar__title">PostgreSQL - MySQL</p>
+        <p className="skillsbar__title">PostgreSQL / MySQL con Sequelize</p>
         <div
           className={`bar front learning ${
             theme.lightMode && 'bar--lightMode'
