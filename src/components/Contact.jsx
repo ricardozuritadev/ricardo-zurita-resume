@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { themeContext } from '../utils/themeContext';
-import Form from './Form';
 
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -14,8 +13,6 @@ const Contact = () => {
       >
         Contáctame
       </h2>
-
-      <Form />
     </section>
   );
 };
