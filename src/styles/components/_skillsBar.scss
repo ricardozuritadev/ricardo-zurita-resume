@@ -1,0 +1,54 @@
+.skillsbar {
+  &__frontend {
+    margin-bottom: 5rem;
+  }
+}
+
+.bar {
+  background-color: $color-black;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  height: 0.25rem;
+  position: relative;
+
+  &--lightMode {
+    background-color: $color-gray-light-2;
+  }
+
+  &::before {
+    content: '';
+    background-color: $color-primary;
+    display: inline-block;
+    border-radius: inherit;
+    height: 0.25rem;
+    position: absolute;
+    animation: loadBar 2s 0s;
+  }
+
+  &--lightMode::before {
+    background-color: $color-black;
+  }
+
+  &.front::before {
+    background-color: $color-secondary;
+  }
+  &.back::before {
+    background-color: $color-tertiary;
+  }
+
+  &.learning::before {
+    width: calc(20% - 10px);
+  }
+  &.basic::before {
+    width: calc(40% - 10px);
+  }
+  &.intermediate::before {
+    width: calc(60% - 10px);
+  }
+  &.advanced::before {
+    width: calc(80% - 10px);
+  }
+  &.expert::before {
+    width: calc(100% - 10px);
+  }
+}

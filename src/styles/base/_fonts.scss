@@ -1,0 +1,68 @@
+.heading__primary {
+  color: $color-primary;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+
+  &--lightMode {
+    color: $color-black;
+  }
+}
+
+.heading__secondary {
+  margin-bottom: 2rem;
+}
+
+.texts {
+  line-height: 1.7;
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+
+.skillsbar__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .heading__primary {
+    font-size: 7rem;
+  }
+
+  .heading__secondary {
+    font-size: 2.2rem;
+  }
+
+  .texts {
+    font-size: 1.9rem;
+  }
+
+  .skillsbar__title {
+    font-size: 1.8rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .heading__primary {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .heading__secondary {
+    font-size: $font-default;
+  }
+
+  .texts {
+    font-size: $font-default;
+  }
+
+  .skillsbar__title {
+    font-size: 1.5rem;
+  }
+}
+
+// Breakpoint 3000px
+@media only screen and (min-width: 3000px) {
+}

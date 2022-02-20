@@ -1,0 +1,24 @@
+.main {
+  padding: 2rem 3rem 0;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .main {
+    padding: 4rem 5rem 0;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .main {
+    padding: 8rem 10rem 0 25rem;
+  }
+}
+
+// Breakpoint 3000px
+@media only screen and (min-width: 3000px) {
+  .main {
+    padding-left: 70rem;
+  }
+}

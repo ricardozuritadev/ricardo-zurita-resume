@@ -8,7 +8,7 @@ import Contact from './Contact';
 
 const Main = () => {
   return (
-    <div>
+    <main className="main">
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<About />} />
@@ -17,7 +17,7 @@ const Main = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </main>
   );
 };
 

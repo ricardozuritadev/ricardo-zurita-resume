@@ -6,7 +6,7 @@
   left: 0;
   text-align: center;
   height: 100vh;
-  width: 10%;
+  width: 15rem;
   transition: all 0.2s ease-out;
 
   &--lightMode {
@@ -16,9 +16,15 @@
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   background-color: $color-black;
   height: 20rem;
   margin-bottom: 6rem;
+}
+
+.logo__img {
+  width: 50%;
 }
 
 .nav {

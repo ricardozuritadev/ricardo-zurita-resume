@@ -26,7 +26,7 @@ const Home = () => {
       </div>
       <div className="character">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fr-home.png?alt=media&token=b31f9487-a000-482b-b2ad-656c5427c85f"
+          src="https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fr-home.png?alt=media&token=c1cd444a-dd62-44ce-9051-f09aae4442c1"
           alt="personaje 3D con gafas saludando"
           className="character__img"
         />

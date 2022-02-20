@@ -9,10 +9,15 @@ const NavBar = () => {
 
   return (
     <header className={`header ${theme.lightMode && 'header--lightMode'}`}>
-      <div className="logo">
-        <img src="" alt="" className="logo__img" />
-      </div>
-
+      <NavLink to="/">
+        <div className="logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/logos%2Frz.svg?alt=media&token=d4585da6-caf4-45a0-8e4f-4c3ecfbf3ea0"
+            alt="logo"
+            className="logo__img"
+          />
+        </div>
+      </NavLink>
       <nav className="nav">
         <NavLink
           className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}

@@ -1,5 +1,20 @@
+import { useContext } from 'react';
+import { themeContext } from '../utils/themeContext';
+
 const Studies = () => {
-  return <section className="studies">Estudios</section>;
+  const theme = useContext(themeContext);
+
+  return (
+    <section className="studies">
+      <h2
+        className={`heading__primary ${
+          theme.lightMode && 'heading__primary--lightMode'
+        }`}
+      >
+        Estudios
+      </h2>
+    </section>
+  );
 };
 
 export default Studies;
