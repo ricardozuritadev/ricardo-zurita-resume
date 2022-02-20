@@ -2,6 +2,7 @@
   color: $color-primary;
   font-size: 5rem;
   margin-bottom: 4rem;
+  transition: all 0.15s;
 
   &--lightMode {
     color: $color-black;
@@ -46,6 +47,7 @@
 
 .studies__title {
   color: $color-secondary;
+  transition: all 0.15s;
 }
 
 // Breakpoint 576px

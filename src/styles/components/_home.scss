@@ -7,15 +7,10 @@
   animation: fadeIn 1.5s;
 
   &__hi {
-    color: $color-tertiary;
     font-size: 2rem;
     font-weight: 200;
     margin-bottom: 1rem;
     padding-left: 0.3rem;
-
-    &--lightMode {
-      color: $color-black;
-    }
   }
 
   &__first {
@@ -24,6 +19,7 @@
     font-weight: 900;
     line-height: 1;
     animation: moveInRight 0.8s;
+    transition: all 0.15s;
 
     &--lightMode {
       color: $color-black;
@@ -45,6 +41,7 @@
     line-height: 1.5;
     margin-top: 1rem;
     padding-left: 0.2rem;
+    transition: all 0.15s;
 
     &--lightMode {
       color: $color-black;

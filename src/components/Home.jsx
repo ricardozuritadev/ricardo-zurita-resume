@@ -10,9 +10,7 @@ const Home = () => {
   return (
     <section className="name">
       <div className="name__texts">
-        <p className={`name__hi ${theme.lightMode && 'name__hi--lightMode'}`}>
-          Hola, soy
-        </p>
+        <p className="name__hi">Hola, soy</p>
         <p
           className={`name__first ${
             theme.lightMode && 'name__first--lightMode'

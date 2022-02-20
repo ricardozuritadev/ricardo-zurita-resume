@@ -47,6 +47,7 @@
     border-radius: 5px;
     padding: 2rem;
     margin-bottom: 5rem;
+    transition: all 0.15s;
 
     &--lightMode {
       background-color: $color-gray-light;

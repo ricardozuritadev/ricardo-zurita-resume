@@ -7,7 +7,7 @@
   text-align: center;
   height: 100vh;
   width: 15rem;
-  transition: all 0.2s ease-out;
+  transition: all 0.15s;
 
   &--lightMode {
     background-color: $color-gray-light;
@@ -63,6 +63,8 @@
   }
 
   &__socialLinks {
+    transition: all 0.15s;
+
     &--lightMode {
       color: $color-black;
     }
