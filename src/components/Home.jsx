@@ -24,7 +24,8 @@ const Home = () => {
             theme.lightMode && 'name__developer--lightMode'
           }`}
         >
-          Desarrollador Web Fullstack Junior <strong>|</strong> MERN
+          Desarrollador Web Fullstack Junior <strong>|</strong>
+          <span className="mern"> MERN</span>
         </p>
       </div>
       <div className="character">
