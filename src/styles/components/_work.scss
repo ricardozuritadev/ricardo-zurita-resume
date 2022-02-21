@@ -1,0 +1,94 @@
+.work {
+  &__img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 20rem;
+    width: 100%;
+
+    &--1 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Frz.jpg?alt=media&token=6402d17b-8b9f-4b61-9ae7-6ea30317763a');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--2 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Fciempies.jpg?alt=media&token=7c771cd1-b5aa-4f4d-932c-851a92fb85bb');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--3 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Fpopclaim.jpg?alt=media&token=fe07a415-046d-4b50-a0b3-67ac195a485c');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--4 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Fgalatours.jpg?alt=media&token=b53c77ff-c783-4238-be39-b5f2bcfceaaa');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--5 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Fpokedex.jpg?alt=media&token=ca7b8f5c-9bf6-460d-9227-2e503b1dc4c2');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--6 {
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/imgs%2Fprojects%2Fvet.jpg?alt=media&token=a002440f-0688-4af2-b486-daac0738b584');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .work__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .work__img {
+    height: 25rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .work {
+    animation: fadeIn 1.5s;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__img {
+      cursor: pointer;
+      position: relative;
+      transition: all 0.5s;
+
+      &::before {
+        content: '';
+        color: transparent;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        transform: scale(0.99);
+      }
+
+      &:hover::before {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}

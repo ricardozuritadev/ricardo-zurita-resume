@@ -1,0 +1,85 @@
+.studies {
+  &__container {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(4, calc(100%));
+    grid-template-rows: minmax(15rem, 1fr);
+    margin-top: 5rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    // SCROLLBAR STYLES
+    // Works on Firefox
+    scrollbar-color: $color-primary $color-black;
+    /* Works on Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      background-color: $color-black;
+      height: 0.8rem;
+      width: 1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-primary;
+      border-radius: 2rem;
+    }
+
+    &--lightMode {
+      // SCROLLBAR STYLES
+      // Works on Firefox
+      scrollbar-color: $color-black $color-gray-light;
+      /* Works on Chrome, Edge, and Safari */
+      &::-webkit-scrollbar {
+        background-color: $color-gray-light;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-gray-light-2;
+      }
+    }
+  }
+
+  &__card {
+    background-color: $color-gray-dark-2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition: all 0.15s;
+
+    &--lightMode {
+      background-color: $color-gray-light;
+    }
+  }
+
+  &__school {
+    border-bottom: 1px solid rgba(168, 168, 168, 0.137);
+    margin-bottom: 3rem;
+  }
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .studies__container {
+    grid-template-columns: repeat(4, calc(50%));
+    gap: 10rem;
+    margin-top: 10rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .studies {
+    animation: fadeIn 1s;
+
+    &__container {
+      grid-template-columns: repeat(4, calc(40% - 4rem));
+      grid-template-rows: minmax(15rem, 1fr);
+      margin-top: 0;
+    }
+
+    &__card {
+      padding: 5rem 4rem;
+    }
+  }
+}

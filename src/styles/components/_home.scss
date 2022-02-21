@@ -1,0 +1,194 @@
+// HOME SECTION
+.header {
+  display: none;
+}
+
+.name {
+  &__hi {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 5rem;
+    padding-left: 0.3rem;
+  }
+
+  &__first {
+    color: $color-primary;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;
+    transition: all 0.15s;
+
+    &--lightMode {
+      color: $color-black;
+    }
+  }
+
+  &__second {
+    color: var(--white);
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__developer {
+    color: $color-secondary;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 1rem 0 8rem;
+    padding-left: 0.2rem;
+    transition: all 0.15s;
+
+    &--lightMode {
+      color: $color-black;
+    }
+  }
+
+  .mern {
+    color: $color-tertiary;
+    font-weight: 400;
+    transition: all 0.15s;
+
+    &--lightMode {
+      color: $color-secondary;
+    }
+  }
+}
+
+.character {
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.scroll {
+  display: none;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .name {
+    &__hi {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+    }
+
+    &__first {
+      font-size: 9rem;
+    }
+
+    &__second {
+      font-size: 8.5rem;
+    }
+
+    &__developer {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Breakpoint 768px
+@media only screen and (min-width: 768px) {
+  .name {
+    display: block;
+
+    &__hi {
+      font-size: 2.2rem;
+      padding-left: 0.5rem;
+    }
+
+    &__first {
+      font-size: 10rem;
+    }
+
+    &__second {
+      font-size: 8.5rem;
+    }
+
+    &__developer {
+      padding-left: 0.3rem;
+    }
+  }
+
+  .character {
+    &__img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .header {
+    display: block;
+  }
+
+  .name {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+
+    &__texts {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  .character {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: 1rem -5rem 0 -15rem;
+    animation: fadeIn 1s;
+
+    &__img {
+      object-fit: cover;
+      width: 90%;
+    }
+  }
+
+  .scroll {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10rem;
+    animation: fadeIn 2s;
+    animation: float 1.5s ease-in-out infinite;
+
+    &__icons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Breakpoint 3000px
+@media only screen and (min-width: 3000px) {
+  .name {
+    &__hi {
+      font-size: 5rem;
+    }
+
+    &__first {
+      font-size: 20rem;
+    }
+
+    &__texts {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 5rem;
+    }
+  }
+}

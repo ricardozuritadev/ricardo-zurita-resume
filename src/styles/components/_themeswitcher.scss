@@ -1,0 +1,45 @@
+.theme__toggle {
+  position: fixed;
+  top: 9rem;
+  right: 2rem;
+}
+
+.theme__toggleBtn {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+
+  &--lightMode {
+    color: $color-white;
+    background-color: $color-black;
+  }
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .theme__toggle {
+    top: 15rem;
+    right: 3rem;
+  }
+
+  .theme__toggleBtn {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .theme__toggle {
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .theme__toggleBtn {
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+}

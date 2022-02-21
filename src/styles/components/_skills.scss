@@ -1,0 +1,64 @@
+.skills {
+  margin-bottom: 10rem;
+
+  &__text {
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
+
+  &__img {
+    width: 50%;
+  }
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .skills {
+    &__img {
+      width: 30%;
+    }
+
+    &__bars {
+      padding: 0 10rem;
+    }
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .skills {
+    animation: fadeIn 1s;
+    margin-bottom: 0;
+
+    &__text {
+      &--hide {
+        display: block;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10rem;
+    }
+
+    &__pic {
+      margin: 6rem 0 0;
+    }
+
+    &__img {
+      width: 35%;
+    }
+
+    &__bars {
+      padding: 0;
+    }
+  }
+}
