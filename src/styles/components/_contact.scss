@@ -1,6 +1,5 @@
 .contact {
   text-align: center;
-  animation: fadeIn 1s;
 
   &__social {
     display: flex;
@@ -63,6 +62,7 @@
 @media only screen and (min-width: 992px) {
   .contact {
     text-align: left;
+    animation: fadeIn 1s;
 
     &__grid {
       display: grid;

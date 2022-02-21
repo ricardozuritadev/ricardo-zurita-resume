@@ -11,13 +11,7 @@ const HambMenu = () => {
   const styles = {
     bmMenu: {
       background: `${theme.lightMode ? '#e6e6e6' : '#000'}`,
-      padding: '2.5em 1.5em 0',
-      fontSize: '1.15em',
     },
-  };
-
-  const showSettings = event => {
-    event.preventDefault();
   };
 
   return (
@@ -27,10 +21,6 @@ const HambMenu = () => {
       customBurgerIcon={<FontAwesomeIcon icon={faBars} />}
     >
       <Nav />
-
-      <a onClick={showSettings} className="menu-item--small" href="button">
-        Settings
-      </a>
     </Menu>
   );
 };

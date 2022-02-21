@@ -1,6 +1,4 @@
 .work {
-  animation: fadeIn 1.5s;
-
   &__img {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     height: 20rem;
@@ -59,34 +57,38 @@
 
 // Breakpoint 992px
 @media only screen and (min-width: 992px) {
-  .work__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .work {
+    animation: fadeIn 1.5s;
 
-  .work__img {
-    cursor: pointer;
-    position: relative;
-    transition: all 0.5s;
-
-    &::before {
-      content: '';
-      color: transparent;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0);
-      position: absolute;
-      transition: all 0.3s;
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    &:hover {
-      transform: scale(0.99);
-    }
+    &__img {
+      cursor: pointer;
+      position: relative;
+      transition: all 0.5s;
 
-    &:hover::before {
-      background-color: rgba(0, 0, 0, 0.6);
+      &::before {
+        content: '';
+        color: transparent;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        transform: scale(0.99);
+      }
+
+      &:hover::before {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
     }
   }
 }

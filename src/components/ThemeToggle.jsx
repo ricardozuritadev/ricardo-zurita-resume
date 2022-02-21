@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+
 const ThemeToggle = ({ theme, setTheme }) => {
   if (JSON.parse(localStorage.getItem('LIGHT_MODE')) === true) {
     document.body.classList.add('light-mode');
@@ -18,7 +21,18 @@ const ThemeToggle = ({ theme, setTheme }) => {
 
   return (
     <div className="theme__toggle">
-      <button onClick={handleModeChange}>Cambiar Tema</button>
+      <button
+        className={`theme__toggleBtn ${
+          theme.lightMode && 'theme__toggleBtn--lightMode'
+        }`}
+        onClick={handleModeChange}
+      >
+        {theme.lightMode ? (
+          <FontAwesomeIcon icon={faMoon} size="lg" />
+        ) : (
+          <FontAwesomeIcon icon={faSun} size="lg" />
+        )}
+      </button>
     </div>
   );
 };

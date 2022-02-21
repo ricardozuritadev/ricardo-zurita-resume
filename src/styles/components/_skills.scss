@@ -1,5 +1,4 @@
 .skills {
-  animation: fadeIn 1s;
   margin-bottom: 10rem;
 
   &__pic {
@@ -29,6 +28,7 @@
 // Breakpoint 992px
 @media only screen and (min-width: 992px) {
   .skills {
+    animation: fadeIn 1s;
     margin-bottom: 0;
 
     &__grid {

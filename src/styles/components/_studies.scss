@@ -1,6 +1,4 @@
 .studies {
-  animation: fadeIn 1s;
-
   &__container {
     display: grid;
     gap: 5rem;
@@ -71,13 +69,17 @@
 
 // Breakpoint 992px
 @media only screen and (min-width: 992px) {
-  .studies__container {
-    grid-template-columns: repeat(4, calc(40% - 4rem));
-    grid-template-rows: minmax(15rem, 1fr);
-    margin-top: 0;
-  }
+  .studies {
+    animation: fadeIn 1s;
 
-  .studies__card {
-    padding: 5rem 4rem;
+    &__container {
+      grid-template-columns: repeat(4, calc(40% - 4rem));
+      grid-template-rows: minmax(15rem, 1fr);
+      margin-top: 0;
+    }
+
+    &__card {
+      padding: 5rem 4rem;
+    }
   }
 }
