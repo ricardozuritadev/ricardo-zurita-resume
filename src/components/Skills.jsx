@@ -15,7 +15,7 @@ const Skills = () => {
         Habilidades
       </h2>
       <div className="skills__grid">
-        <div className="skills__text">
+        <div className="skills__text skills__text--hide">
           <p className="texts">
             He desarrollado habilidades tanto en la parte
             <strong> Front-end</strong> como en<strong> Back-end</strong>. Soy

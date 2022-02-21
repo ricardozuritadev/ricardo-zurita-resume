@@ -10,6 +10,7 @@
   margin-bottom: 2rem;
   height: 0.25rem;
   position: relative;
+  z-index: -1;
 
   &--lightMode {
     background-color: $color-gray-light-2;

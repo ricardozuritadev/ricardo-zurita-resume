@@ -1,6 +1,12 @@
 .skills {
   margin-bottom: 10rem;
 
+  &__text {
+    &--hide {
+      display: none;
+    }
+  }
+
   &__pic {
     display: flex;
     justify-content: center;
@@ -30,6 +36,12 @@
   .skills {
     animation: fadeIn 1s;
     margin-bottom: 0;
+
+    &__text {
+      &--hide {
+        display: block;
+      }
+    }
 
     &__grid {
       display: grid;

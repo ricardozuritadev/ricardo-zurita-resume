@@ -30,7 +30,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $color-black;
+    background-color: $color-primary;
     border-radius: 2rem;
   }
 
@@ -48,7 +48,7 @@ body {
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $color-gray-light-2;
+      background-color: $color-secondary;
       border-radius: 2rem;
     }
   }

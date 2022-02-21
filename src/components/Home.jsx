@@ -6,6 +6,7 @@ import {
   faAngleDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import SkillsBar from './SkillsBar';
 
 const Home = () => {
   const theme = useContext(themeContext);
@@ -51,31 +52,46 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="about sections__spacing">
-        <div className="about__text">
-          <h2
-            className={`heading__primary ${
-              theme.lightMode && 'heading__primary--lightMode'
-            }`}
-          >
-            Sobre mí
-          </h2>
-          <p className="texts">
-            Soy desarrollador web Full-Stack junior. Al principio, el desarrollo
-            web era una curiosidad para mí. Ahora se ha convertido en una pasión
-            y día a día estoy mejorando y en constante aprendizaje de nuevas
-            tecnologías.
-          </p>
-          <p className="texts">
-            También he hecho estudios en diseño 2D/3D, grabación y edición de
-            vídeo.
-          </p>
-          <p className="texts">
-            Me gusta tocar la guitarra en mis tiempos libres y engancharme a una
-            que otra serie.
-          </p>
+      <section className="skills  sections__spacing">
+        <h2
+          className={`heading__primary ${
+            theme.lightMode && 'heading__primary--lightMode'
+          }`}
+        >
+          Sobre mí y mis habilidades
+        </h2>
+        <div className="skills__grid">
+          <div className="skills__text">
+            <p className="texts">
+              Al principio, el desarrollo web era una curiosidad para mí. Ahora
+              se ha convertido en una pasión y día a día estoy mejorando y en
+              constante aprendizaje de nuevas tecnologías.
+            </p>
+            <p className="texts">
+              He desarrollado habilidades tanto en la parte
+              <strong> Front-end</strong> como en<strong> Back-end</strong>. Soy
+              especialista en el stack<strong> MERN</strong>.
+            </p>
+            <p className="texts">
+              Considero que mis puntos fuertes son la maquetación con
+              <strong> React</strong>,<strong> CSS</strong> y
+              <strong> Sass</strong> en la parte Front-end, y
+              <strong> Node.js</strong> con<strong> express</strong> en la parte
+              Back-end
+            </p>
+            <p className="texts">
+              Tengo conocimientos sólidos en la base de datos NoSQL
+              <strong> MongoDB</strong> con<strong> mongoose</strong>.
+            </p>
+            <p className="texts">
+              También he hecho un poco de testing con<strong> Jest</strong>, y
+              he empezado a aprender<strong> Docker</strong>.
+            </p>
+          </div>
+          <div className="skills__bars">
+            <SkillsBar />
+          </div>
         </div>
-        <div className="about__img"></div>
       </section>
 
       <section className="work sections__spacing">
@@ -84,7 +100,7 @@ const Home = () => {
             theme.lightMode && 'heading__primary--lightMode'
           }`}
         >
-          Proyectos
+          Mi portfolio
         </h2>
 
         <div className="work__grid">

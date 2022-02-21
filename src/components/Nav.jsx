@@ -19,13 +19,6 @@ const Nav = () => {
 
         <NavLink
           className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/about"
-        >
-          Sobre mí
-        </NavLink>
-
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
           to="/skills"
         >
           Habilidades
