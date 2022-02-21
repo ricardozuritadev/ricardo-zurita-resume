@@ -3,8 +3,9 @@ import { useContext } from 'react';
 import { themeContext } from '../utils/themeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import Nav from './Nav';
 
-const NavBar = () => {
+const HeaderDesktop = () => {
   const theme = useContext(themeContext);
 
   return (
@@ -18,42 +19,8 @@ const NavBar = () => {
           />
         </div>
       </NavLink>
-      <nav className="nav">
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/about"
-        >
-          Sobre mí
-        </NavLink>
 
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/skills"
-        >
-          Habilidades
-        </NavLink>
-
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/studies"
-        >
-          Estudios
-        </NavLink>
-
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/work"
-        >
-          Proyectos
-        </NavLink>
-
-        <NavLink
-          className={`nav__links ${theme.lightMode && 'nav__links--lightMode'}`}
-          to="/contact"
-        >
-          Contacto
-        </NavLink>
-      </nav>
+      <Nav />
 
       <div className="nav__social">
         <a
@@ -82,4 +49,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default HeaderDesktop;

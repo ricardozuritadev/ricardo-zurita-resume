@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { themeContext } from './utils/themeContext';
 import { BrowserRouter } from 'react-router-dom';
 import Main from './components/Main';
-import NavBar from './components/NavBar';
 import ThemeToggle from './components/ThemeToggle';
+import HeaderMobile from './components/HeaderMobile';
+import HeaderDesktop from './components/HeaderDesktop';
 
 const App = () => {
   const [theme, setTheme] = useState({
@@ -15,7 +16,8 @@ const App = () => {
       <themeContext.Provider value={theme}>
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <BrowserRouter>
-          <NavBar />
+          <HeaderMobile />
+          <HeaderDesktop />
           <Main />
         </BrowserRouter>
       </themeContext.Provider>

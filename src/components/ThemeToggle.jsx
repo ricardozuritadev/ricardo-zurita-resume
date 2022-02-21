@@ -17,7 +17,7 @@ const ThemeToggle = ({ theme, setTheme }) => {
   };
 
   return (
-    <div className="theme-switcher">
+    <div className="theme__toggle">
       <button onClick={handleModeChange}>Cambiar Tema</button>
     </div>
   );

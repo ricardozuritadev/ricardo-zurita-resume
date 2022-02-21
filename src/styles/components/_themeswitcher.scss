@@ -1,5 +1,21 @@
-.theme-switcher {
+.theme__toggle {
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 10rem;
+  right: 2rem;
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .theme__toggle {
+    top: 15rem;
+    right: 3rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .theme__toggle {
+    top: 3rem;
+    right: 3rem;
+  }
 }

@@ -1,0 +1,28 @@
+.navbar__mobile {
+  background-color: $color-black;
+  height: 8rem;
+  position: sticky;
+  top: 0;
+  margin-bottom: 2rem;
+  transition: all 0.15s;
+
+  &--lightMode {
+    background-color: $color-gray-light;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    color: $color-black;
+  }
+}
+
+// Breakpoint 576px
+@media only screen and (min-width: 576px) {
+  .navbar__mobile {
+    height: 12rem;
+  }
+}
+
+// Breakpoint 992px
+@media only screen and (min-width: 992px) {
+  .navbar__mobile {
+    display: none;
+  }
+}

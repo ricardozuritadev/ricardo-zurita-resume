@@ -18,7 +18,8 @@ const Skills = () => {
         <div className="skills__text">
           <p className="texts">
             He desarrollado habilidades tanto en la parte
-            <strong> Front-end</strong> como en<strong> Back-end</strong>.
+            <strong> Front-end</strong> como en<strong> Back-end</strong>. Soy
+            especialista en el stack<strong> MERN</strong>.
           </p>
           <p className="texts">
             Considero que mis puntos fuertes son la maquetación con
@@ -35,6 +36,13 @@ const Skills = () => {
             También he hecho un poco de testing con<strong> Jest</strong>, y he
             empezado a aprender<strong> Docker</strong>.
           </p>
+          <div className="skills__pic">
+            <img
+              className="skills__img"
+              src="https://firebasestorage.googleapis.com/v0/b/ricardo-zurita-resume.appspot.com/o/logos%2Fmern.png?alt=media&token=428eb923-6210-4eef-8044-38d570b50d52"
+              alt="mern stack"
+            />
+          </div>
         </div>
         <div className="skills__bars">
           <SkillsBar />
