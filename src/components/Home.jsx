@@ -184,7 +184,7 @@ const Home = () => {
                 className={`nav_socialLinks ${
                   theme.lightMode && 'nav__socialLinks--lightMode'
                 }`}
-                href="https://www.linkedin.com/in/ricardozuritab/"
+                href="https://www.linkedin.com/in/ricardozuritadev/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -195,7 +195,7 @@ const Home = () => {
                 className={`nav_socialLinks ${
                   theme.lightMode && 'nav__socialLinks--lightMode'
                 }`}
-                href="https://github.com/ricardozurita"
+                href="https://github.com/ricardozuritadev"
                 target="_blank"
                 rel="noreferrer"
               >
