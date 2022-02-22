@@ -163,19 +163,18 @@ const Home = () => {
             <p className="texts">
               Escríbeme a
               <span>
+                {' '}
                 <a
                   className={`mail__link ${
                     theme.lightMode && 'mail__link--lightMode'
                   }`}
-                  href="mailto:hola@ricardo-zurita.com"
+                  href="mailto:ricardo.zurita.dev@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {' '}
-                  hola@ricardo-zurita.com{' '}
+                  ricardo.zurita.dev@gmail.com
                 </a>
               </span>
-              si quieres contactar conmigo.
             </p>
 
             <p className="texts">O puedes visitar mis perfiles sociales:</p>

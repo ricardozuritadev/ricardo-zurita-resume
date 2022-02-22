@@ -20,6 +20,7 @@ const Contact = () => {
           <p className="texts">
             Escríbeme a
             <span>
+              {' '}
               <a
                 className={`mail__link ${
                   theme.lightMode && 'mail__link--lightMode'
