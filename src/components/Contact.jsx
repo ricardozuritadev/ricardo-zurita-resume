@@ -24,15 +24,13 @@ const Contact = () => {
                 className={`mail__link ${
                   theme.lightMode && 'mail__link--lightMode'
                 }`}
-                href="mailto:hola@ricardo-zurita.com"
+                href="mailto:ricardo.zurita.dev@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                {' '}
-                hola@ricardo-zurita.com{' '}
+                ricardo.zurita.dev@gmail.com
               </a>
             </span>
-            si quieres contactar conmigo.
           </p>
 
           <p className="texts">O puedes visitar mis perfiles sociales:</p>
@@ -42,7 +40,7 @@ const Contact = () => {
               className={`nav_socialLinks ${
                 theme.lightMode && 'nav__socialLinks--lightMode'
               }`}
-              href="https://www.linkedin.com/in/ricardozuritab/"
+              href="https://www.linkedin.com/in/ricardozuritadev/"
               target="_blank"
               rel="noreferrer"
             >
@@ -53,7 +51,7 @@ const Contact = () => {
               className={`nav_socialLinks ${
                 theme.lightMode && 'nav__socialLinks--lightMode'
               }`}
-              href="https://github.com/ricardozurita"
+              href="https://github.com/ricardozuritadev"
               target="_blank"
               rel="noreferrer"
             >
